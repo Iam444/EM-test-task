@@ -1,5 +1,5 @@
 import { Config } from '@app/config.ts';
-import { InvalidMappingStrategyError } from '@app/invalid-mapping.strategy.error.ts';
+import { InvalidMappingStrategyError } from "@app/invalid-mapping-strategy.error.ts";
 
 export class Mapper {
     public static mapToORM(entity: any): any {
