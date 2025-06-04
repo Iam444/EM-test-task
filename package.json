@@ -1,0 +1,30 @@
+{
+   "name": "test-task",
+   "version": "1.0.0",
+   "description": "A test task for a Node.js developer vacancy",
+   "main": "src/main.ts",
+   "scripts": {
+      "build": "tsc",
+      "start": "ts-node -r tsconfig-paths/register src/main.ts"
+   },
+   "author": "Iam444",
+   "license": "ISC",
+   "dependencies": {
+      "@nestjs/typeorm": "^11.0.0",
+      "dotenv": "^16.5.0",
+      "express": "^5.1.0",
+      "reflect-metadata": "^0.2.2",
+      "sqlite": "^5.1.1",
+      "sqlite3": "^5.1.7",
+      "tsc-alias": "^1.8.16",
+      "typeorm": "0.3.24"
+   },
+   "devDependencies": {
+      "@types/express": "^5.0.2",
+      "@types/node": "^22.15.29",
+      "ts-loader": "^9.5.2",
+      "ts-node": "^10.9.2",
+      "tsconfig-paths": "^4.2.0",
+      "typescript": "^5.8.3"
+   }
+}
