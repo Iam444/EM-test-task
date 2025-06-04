@@ -14,18 +14,18 @@ export class AppFactory {
 
         await DBSource.initialize()
             .then(() => {
-                console.log("DATA SOURCE has been initialized");
+                console.log('DATA SOURCE has been initialized');
             })
             .catch((err) => {
-                console.error("Error during Data Source initialization", err);
+                console.error('Error during Data Source initialization', err);
             });
 
         await Router.initialize()
             .then(() => {
-                console.log("All ROUTES has been initialized");
+                console.log('All ROUTES has been initialized');
             })
             .catch((err) => {
-                console.error("Error during routes initialization", err);
+                console.error('Error during routes initialization', err);
             });
 
         dotenv.config();
