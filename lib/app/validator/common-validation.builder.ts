@@ -14,7 +14,7 @@ export class CommonValidationBuilder {
             return this._throwOrReturnNull();
         }
 
-        return new StringValidationBuilder(this._sbj, this._propName, this._throwError);
+        return new StringValidationBuilder(String(this._sbj), this._propName, this._throwError);
     }
 
     public isNumber(): NumberValidationBuilder | null {
@@ -22,7 +22,7 @@ export class CommonValidationBuilder {
             return this._throwOrReturnNull();
         }
 
-        return new NumberValidationBuilder(this._sbj, this._propName, this._throwError);
+        return new NumberValidationBuilder(Number(this._sbj), this._propName, this._throwError);
     }
 
     private _throwOrReturnNull(): null {
